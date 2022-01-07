@@ -8,9 +8,9 @@
 */
   let number=+prompt("Enter the number");
   if(number%2===0){
-    alert("Even");
+    alert("number is Even");
   }else{
-    alert("odd");
+    alert("number is odd");
   }
 
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
@@ -46,7 +46,7 @@ if(houseName=="stark"){
  
 // 5. Convert the above code using`?` terniary operator
 // let houseName =prompt("Enter house name");
-houseName=="stark" || houseName=="lannister" ?  alert("Winter is coming") : alert("A lannister always pays his debt");
+houseName=="stark" ?  alert("Winter is coming") : houseName=="lannister" ? alert("A lannister always pays his debt"): alert("All men must die");
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
@@ -94,6 +94,47 @@ switch(month){
 }
 
 
+let monthName=prompt("Enter No.of MonthName");
+switch(monthName){
+    case "january":
+        alert("31 days in the january Month");
+        break;
+          case "febuary":
+        alert("28/29 days in the February Month");
+        break;
+          case "march":
+        alert("31 days in the March Month");
+        break;
+          case "april":
+        alert("30 days in the April Month");
+        break;
+          case "may":
+        alert("31 days in the May Month");
+        break;
+          case "june":
+        alert("30 days in the June Month");
+        break;
+          case "july":
+        alert("31 days in the July Month");
+        break;
+          case "august":
+        alert("31 days in the August Month");
+        break;
+          case "september":
+        alert("30 days in the September Month");
+        break;
+          case "october":
+        alert("31 days in the October Month");
+        break;
+          case "november":
+        alert("30 days in the November Month");
+        break;
+          case "december":
+        alert("31 days in the December Month");
+        break;
+    default:
+        alert("Invalid Month Name");
+}
 
 /* 7.
 - Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
@@ -115,6 +156,25 @@ switch(true){
   break;
   default:
   alert("No salary");
+}
+
+let salery=Number(prompt("Enter Hand Amount"));
+switch(true){
+  case salery<=20000:
+    let tax= (salery*10)/100;
+    alert(`your in hand ${salery - tax}`);
+    break;
+    case salery<=40000:
+    let tax= (salery*20)/100;
+    alert(`your in hand ${salery - tax}`);
+    break;
+    case salery>20000:
+      let tax= (salery*10)/100;
+      alert(`your in hand ${salery - tax}`);
+      break;
+      default:
+        alert("invalid");
+
 }
 
 
