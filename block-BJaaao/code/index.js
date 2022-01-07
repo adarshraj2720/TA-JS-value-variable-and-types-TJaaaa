@@ -55,10 +55,10 @@ console.log(`Username: ${userName}\n Adult ${isAdult} \n Profession ${userProfes
   - Log using console.log [numA - numB]
   - Log using console.log [numA * numB]
 */
-let numA=+prompt("Enter 1st Value",56);
-let numB=+prompt("Enter 2nd Value",89);
-alert(`The sum of both numbers ${numA+numB}`);
-alert(` ${numA-numB}`);
-alert(` ${numA*numB}`);
-console.log(`${numA-numB}`);
-console.log(`${numA*numB}`);
+let numA=Number(prompt("Enter 1st Value",56));
+let numB=Number(prompt("Enter 2nd Value",89));
+alert(numA+numB);
+alert(numA-numB);
+alert(numA*numB);
+console.log(numA-numB);
+console.log(numA*numB);
