@@ -36,6 +36,14 @@ n = 7 => output: heeeeeeello
 */
 // [Your code goes here]
 
+let n= +prompt(" ");
+ let  first ="h";
+ let  last="llo";
+ let middle="";
+ for(let i=0;i<=n;i++){
+   middle += "e"
+ }
+alert(first+middle+last);
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
@@ -171,14 +179,12 @@ let num2=+prompt("Enter 2nd Number");
 let firstNumber=Number(prompt("Enter First Number"));
 let secondNumber=Number(prompt("Enter Second Number"));
 let thirdNumber=Number(prompt("Enter Third Number"));
-let operation=prompt("Enter operation sign");
-if(operation=="+"){
-    alert(firstNumber+secondNumber+thirdNumber);
-}else if(operation=="-"){
-    alert(firstNumber-secondNumber-thirdNumber);
-}else{
-    alert("None");
-}
+let product = firstNumber * secondNumber *thirdNumber;
+if(product>0){
+  alert(`value is positive`);
+}else
+  alert(`value is negative`);
+
 /* Calculator
  🎖Make a simple calculator with these functions. Using prompt, type conversion, if else statement. Use prompt to take the input from user i.e two numbers and an operation (Add, Sub, Mul, Div).
 
