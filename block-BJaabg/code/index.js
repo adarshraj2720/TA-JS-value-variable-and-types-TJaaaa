@@ -22,11 +22,15 @@ while(bank_balance > 0){
   if(amount < SPENDING_THRESHOLD) {
     amount += ACCESSORY_PRICE 
   }
-  amount += TAX_RATE*amount
-  alert(`$ ${amount}`);
-  bank_balance = bank_balance - amount;
-  
-
 }
+let tax = amount *TAX_RATE;
+let taxedAmount= amount+tax;
+console.log(`$${taxedAmount}`)
+ if(taxedAmount < bank_balance){
+     console.log(`You can afford it!`);
+
+ }else{
+     console.log(`You can not afford to buy it`);
+ }
 
 // ⛑ Answer of the above will `$334.76`.
