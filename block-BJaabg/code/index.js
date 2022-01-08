@@ -15,4 +15,18 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
+
+
+while(bank_balance > 0){
+  amount += PHONE_PRICE;
+  if(amount < SPENDING_THRESHOLD) {
+    amount += ACCESSORY_PRICE 
+  }
+  amount += TAX_RATE*amount
+  alert(`$ ${amount}`);
+  bank_balance = bank_balance - amount;
+  
+
+}
+
 // ⛑ Answer of the above will `$334.76`.
