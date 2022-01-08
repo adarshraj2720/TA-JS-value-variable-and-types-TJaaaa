@@ -37,6 +37,15 @@ n = 7 => output: heeeeeeello
 // [Your code goes here]
 
 let n= +prompt(" ");
+
+ let middle="";
+ for(let i=0;i<=n;i++){
+   middle += "e"
+ }
+alert(`h${middle}llo`);
+
+
+let n= +prompt(" ");
  let  first ="h";
  let  last="llo";
  let middle="";
