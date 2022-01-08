@@ -34,10 +34,10 @@ for(let i=1;i<=10;i=i+1){
 console.log(sum);
 
 // Log all the values from 1 to 10 using while loop
-let i=0;
-while(i<10){
-    i=i+1;{
+let i=1;
+while(i<=10){
+    
         console.log(i);
-    }
+        i++;
    
 }
